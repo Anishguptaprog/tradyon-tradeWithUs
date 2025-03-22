@@ -1,0 +1,13 @@
+@import "tailwindcss/preflight";  /* Replaces @tailwind base */
+@import "tailwindcss/utilities";
+body {
+  background-color: #f7fafc; /* Equivalent to bg-gray-100 */
+  color: #1a202c; /* Equivalent to text-gray-900 */
+}
+
+.container {
+  max-width: 72rem; /* Equivalent to max-w-6xl */
+  margin-left: auto; /* Equivalent to mx-auto */
+  margin-right: auto; /* Equivalent to mx-auto */
+  padding: 1rem; /* Equivalent to p-4 */
+}

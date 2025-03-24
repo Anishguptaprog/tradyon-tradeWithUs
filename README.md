@@ -129,6 +129,20 @@ This README file covers:
 - **MongoDB database**
 - **Installation, running, and API docs.
 
-## **Attaching Screenshots for references
-#All Profiles
+# Attaching Screenshots for references
+## Home Page
+![Image](home.png)
+## All Profiles
 ![Image](profiles.png)
+## All Products
+![Image](products.png)
+## Create Profile
+![Image](create.png)
+## Create Product
+![Image](createprod.png)
+## Edit Profile
+![Image](edit.png)
+## Edit Product
+![Image](editprod.png)
+## Login
+![Image](login.png)

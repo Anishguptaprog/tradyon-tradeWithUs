@@ -129,6 +129,6 @@ This README file covers:
 - **MongoDB database**
 - **Installation, running, and API docs.
 
-## ** Attaching Screenshots for references
-** All Profiles
+## **Attaching Screenshots for references
+#All Profiles
 ![Image](profiles.png)

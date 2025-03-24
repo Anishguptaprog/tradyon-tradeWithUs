@@ -8,7 +8,7 @@ export default function ProductListPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchData<Product[]>("/api/products")
+    fetchData<Product[]>(`/product/all`)
       .then(setProducts)
       .catch(() => setError("Failed to load products."));
   }, []);
@@ -21,7 +21,7 @@ export default function ProductListPage() {
       ) : (
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((product) => (
-            <li key={product.ProductId} className="border p-4 rounded shadow-md">
+            <li key={product._id} className="border p-4 rounded shadow-md">
               <h2 className="text-lg font-semibold">{product.ProductName}</h2>
               <p>Origin: {product.Origin}</p>
               <p>Packing: {product.PackingDetails}</p>

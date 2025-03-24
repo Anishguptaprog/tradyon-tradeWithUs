@@ -1,14 +1,25 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-export function useAuth() {
-    const user = JSON.parse(localStorage.getItem("user") || "null");
-  
-    function login(userData: any) {
-      localStorage.setItem("user", JSON.stringify(userData));
-    }
-  
-    function logout() {
-      localStorage.removeItem("user");
-    }
-  
-    return { user, login, logout };
+export function getUser() {
+  if (typeof window !== "undefined") {
+    const user = localStorage.getItem("user");
+    return user ? JSON.parse(user) : null;
   }
+  return null;
+}
+
+interface UserData {
+  id: string;
+  name: string;
+  email: string;
+}
+
+export function login(userData: UserData) {
+  if (typeof window !== "undefined") {
+    localStorage.setItem("user", JSON.stringify(userData));
+  }
+}
+
+export function logout() {
+  if (typeof window !== "undefined") {
+    localStorage.removeItem("user");
+  }
+}

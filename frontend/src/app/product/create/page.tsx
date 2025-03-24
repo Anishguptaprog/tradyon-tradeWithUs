@@ -10,7 +10,7 @@ export default function CreateProduct() {
 
   const handleSubmit = async (formData: Product) => {
     try {
-      await fetchData("/api/product", {
+      await fetchData(`/product`, {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },

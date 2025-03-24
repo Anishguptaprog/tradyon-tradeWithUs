@@ -10,13 +10,13 @@ export default function EditProduct({ params }: { params: { id: string } }) {
   const router = useRouter();
 
   useEffect(() => {
-    fetchData<Product>(`/api/products/${params.id}`)
+    fetchData<Product>(`/product/${params.id}`)
       .then(setProduct)
       .catch(() => console.error("Failed to load product"));
   }, [params.id]);
 
   const handleSubmit = async (formData: Product) => {
-    await fetchData(`/api/products/${params.id}`, {
+    await fetchData(`/product/${params.id}`, {
       method: "PUT",
       body: JSON.stringify(formData),
       headers: { "Content-Type": "application/json" },

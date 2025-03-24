@@ -10,7 +10,7 @@ export default function ProfileDetailPage({ params }: { params: { id: string } }
   const router = useRouter();
 
   useEffect(() => {
-    fetchData<Profile>(`/api/profiles/${params.id}`)
+    fetchData<Profile>(`/profile/${params.id}`)
       .then(setProfile)
       .catch(() => setError("Failed to load profile."));
   }, [params.id]);
@@ -30,7 +30,7 @@ export default function ProfileDetailPage({ params }: { params: { id: string } }
       <p className="mt-2"><strong>Address:</strong> {profile.Address}</p>
 
       <button 
-        onClick={() => router.push(`/profile/edit/${profile.ProfileId}`)}
+        onClick={() => router.push(`/profile/edit/${profile._id}`)}
         className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
         Edit Profile
       </button>

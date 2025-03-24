@@ -8,7 +8,7 @@ export default function ProfileListPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchData<Profile[]>("/api/profiles")
+    fetchData<Profile[]>(`/profile/all`)
       .then(setProfiles)
       .catch(() => setError("Failed to load profiles."));
   }, []);

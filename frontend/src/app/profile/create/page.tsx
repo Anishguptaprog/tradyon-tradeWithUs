@@ -10,7 +10,7 @@ export default function CreateProfile() {
 
   const handleSubmit = async (formData: Profile) => {
     try {
-      await fetchData("/api/profile", {
+      await fetchData(`/profile`, {
         method: "POST",
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },

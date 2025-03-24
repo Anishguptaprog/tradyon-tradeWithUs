@@ -7,21 +7,29 @@ import ProfileForm from "@/components/ProfileForm";
 
 export default function EditProfile({ params }: { params: { id: string } }) {
   const [profile, setProfile] = useState<Profile | null>(null);
+  const [id, setId] = useState<string | null>(null);
   const router = useRouter();
+  useEffect(() => {
+    async function resolveParams() {
+      const resolvedId = await params.id;
+      setId(resolvedId);
+    }
+    resolveParams();
+  }, [params]);
 
   useEffect(() => {
-    fetchData<Profile>(`/api/profiles/${params.id}`)
+    fetchData<Profile>(`/profile/${id}`)
       .then(setProfile)
       .catch(() => console.error("Failed to load profile"));
-  }, [params.id]);
+  }, [id]);
 
   const handleSubmit = async (formData: Profile) => {
-    await fetchData(`/api/profiles/${params.id}`, {
+    await fetchData(`/profile/${id}`, {
       method: "PUT",
       body: JSON.stringify(formData),
       headers: { "Content-Type": "application/json" },
     });
-    router.push(`/profile/${params.id}`);
+    router.push(`/profile/${id}`);
   };
 
   return (

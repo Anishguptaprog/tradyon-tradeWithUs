@@ -9,7 +9,7 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
   const router = useRouter();
 
   useEffect(() => {
-    fetchData<Product>(`/api/products/${params.id}`)
+    fetchData<Product>(`/product/${params.id}`)
       .then(setProduct)
       .catch(() => console.error("Failed to load product"));
   }, [params.id]);
@@ -30,7 +30,7 @@ export default function ProductDetails({ params }: { params: { id: string } }) {
         </p>
       </div>
       <button
-        onClick={() => router.push(`/product/edit/${product.ProductId}`)}
+        onClick={() => router.push(`/product/edit/${product._id}`)}
         className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
       >
         Edit Product

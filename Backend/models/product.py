@@ -12,3 +12,4 @@ class Product(BaseModel):
     moisture: str
     form_and_cut: str
     image: str
+    price: float

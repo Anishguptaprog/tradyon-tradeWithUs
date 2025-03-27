@@ -21,7 +21,7 @@ export default function ProfileListPage() {
       ) : (
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {profiles.map((profile) => (
-            <li key={profile.ProfileId} className="border p-4 rounded shadow-md">
+            <li key={profile._id} className="border p-4 rounded shadow-md">
               <h2 className="text-lg font-semibold">{profile.BusinessName}</h2>
               <p>Overview: {profile.BusinessOverview}</p>
               <p>Address: {profile.Address}</p>

@@ -15,6 +15,7 @@ import {
   ArrowLeft 
 } from "lucide-react";
 import Image from "next/image";
+import VerificationBadge from "@/components/VerificationBadge";
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const [product, setProduct] = useState<Product | null>(null);
@@ -47,7 +48,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             <div>
               <h1 className="text-2xl font-bold text-green-800">{product.ProductName}</h1>
               <div className="flex items-center space-x-2 mt-2">
-                <Badge variant="secondary">Verified</Badge>
+                <Badge variant="secondary">Verified</Badge><VerificationBadge/>
                 <span className="text-sm text-gray-600">Seller: ABC Trader</span>
               </div>
             </div>
@@ -110,7 +111,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 </div>
               </div>
             </div>
-
+            
             <Separator />
 
             <div>

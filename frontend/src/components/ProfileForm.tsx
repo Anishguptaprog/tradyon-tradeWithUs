@@ -13,7 +13,7 @@ export default function ProfileForm({ profile, onSubmit }: ProfileFormProps) {
       _id: "",
       BusinessName: "",
       BusinessOverview: "",
-      BusinessType: "", // Fixed BusinessType field
+      BusinessType: "",
       Established: "",
       Address: "",
       Logo: "",
@@ -26,6 +26,7 @@ export default function ProfileForm({ profile, onSubmit }: ProfileFormProps) {
       Location: "",
       ExportPercentage: "",
       ExportCountries: [],
+      Image: "",
     }
   );
 

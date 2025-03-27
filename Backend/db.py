@@ -85,7 +85,11 @@ async def populate_database():
             "Established": "2005",
             "Address": "New York, USA",
             "Logo": "freshfarms.jpg",
-            "Owner": "John Doe"
+            "Owner": "John Doe",
+            "FormAndCut": "Whole",
+            "Moisture": "Low",
+            "Colour": "Multiple",
+            "ExportPercentage": 90
         },
         {
             "ProfileId": "2",
@@ -95,7 +99,11 @@ async def populate_database():
             "Established": "2010",
             "Address": "Barcelona, Spain",
             "Logo": "tropicalexports.jpg",
-            "Owner": "Jane Smith"
+            "Owner": "Jane Smith",
+            "FormAndCut": "Sliced",
+            "Moisture": "Low",
+            "Colour": "Multiple",
+            "ExportPercentage": 95
         },
         {
             "ProfileId": "3",
@@ -105,7 +113,11 @@ async def populate_database():
             "Established": "2015",
             "Address": "London, UK",
             "Logo": "greenharvest.jpg",
-            "Owner": "Michael Brown"
+            "Owner": "Michael Brown",
+            "FormAndCut": "Cubed",
+            "Moisture": "Medium",
+            "Colour": "Green",
+            "ExportPercentage": 98
         },
         {
             "ProfileId": "4",
@@ -115,7 +127,11 @@ async def populate_database():
             "Established": "2012",
             "Address": "Berlin, Germany",
             "Logo": "organicworld.jpg",
-            "Owner": "Anna Schmidt"
+            "Owner": "Anna Schmidt",
+            "FormAndCut": "Whole",
+            "Moisture": "Low",
+            "Colour": "Red",
+            "ExportPercentage": 89
         },
         {
             "ProfileId": "5",
@@ -125,8 +141,13 @@ async def populate_database():
             "Established": "2018",
             "Address": "Dubai, UAE",
             "Logo": "sunriseimports.jpg",
-            "Owner": "Ali Hassan"
+            "Owner": "Ali Hassan",
+            "FormAndCut": "Whole",
+            "Moisture": "Low",
+            "Colour": "Multiple",
+            "ExportPercentage": 91
         }
+        
     ]
     await db["products"].insert_many(sample_products)
     await db["profiles"].insert_many(sample_profiles)

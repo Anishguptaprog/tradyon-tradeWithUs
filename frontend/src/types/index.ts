@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export interface Product {
-  _id: string;  // Change from ProductId to _id
+  _id: string;  
   ProductName: string;
   Origin: string;
   PackingDetails: string;
@@ -14,6 +14,12 @@ export interface Product {
 }
 
 export interface Profile {
+  Image: any;
+  Origin?: string;
+  FormAndCut?: string;
+  Moisture?: string;
+  Colour?: string;
+  CultivationType?: string;
   Type: string | number | readonly string[] | undefined;
   Size: string | number | readonly string[] | undefined;
   Founded: string | number | readonly string[] | undefined;
@@ -21,7 +27,7 @@ export interface Profile {
   Location: string | number | readonly string[] | undefined;
   ExportPercentage: string | number | readonly string[] | undefined;
   ExportCountries: any;
-  _id: string;  // Change from ProfileId to _id
+  _id: string; 
   BusinessName: string;
   BusinessOverview: string;
   BusinessType: string;

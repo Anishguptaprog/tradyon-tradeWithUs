@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f94"
+  },
+  "ProfileId": "1",
+  "BusinessName": "Fresh Farms",
+  "BusinessOverview": "Supplier of organic fruits.",
+  "BusinessType": "Supplier",
+  "Established": "2005",
+  "Address": "New York, USA",
+  "Logo": "freshfarms.jpg",
+  "Owner": "John Doe",
+  "FormAndCut": "Whole",
+  "Moisture": "Low",
+  "Colour": "Multiple",
+  "ExportPercentage": 90
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f95"
+  },
+  "ProfileId": "2",
+  "BusinessName": "Tropical Exports",
+  "BusinessOverview": "Exporter of exotic fruits.",
+  "BusinessType": "Exporter",
+  "Established": "2010",
+  "Address": "Barcelona, Spain",
+  "Logo": "tropicalexports.jpg",
+  "Owner": "Jane Smith",
+  "FormAndCut": "Sliced",
+  "Moisture": "Low",
+  "Colour": "Multiple",
+  "ExportPercentage": 95
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f96"
+  },
+  "ProfileId": "3",
+  "BusinessName": "Green Harvest",
+  "BusinessOverview": "Wholesale distributor of fresh produce.",
+  "BusinessType": "Distributor",
+  "Established": "2015",
+  "Address": "London, UK",
+  "Logo": "greenharvest.jpg",
+  "Owner": "Michael Brown",
+  "FormAndCut": "Cubed",
+  "Moisture": "Medium",
+  "Colour": "Green",
+  "ExportPercentage": 98
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f97"
+  },
+  "ProfileId": "4",
+  "BusinessName": "Organic World",
+  "BusinessOverview": "Certified organic fruit supplier.",
+  "BusinessType": "Supplier",
+  "Established": "2012",
+  "Address": "Berlin, Germany",
+  "Logo": "organicworld.jpg",
+  "Owner": "Anna Schmidt",
+  "FormAndCut": "Whole",
+  "Moisture": "Low",
+  "Colour": "Red",
+  "ExportPercentage": 89
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f98"
+  },
+  "ProfileId": "5",
+  "BusinessName": "Sunrise Imports",
+  "BusinessOverview": "Importer of tropical fruits.",
+  "BusinessType": "Importer",
+  "Established": "2018",
+  "Address": "Dubai, UAE",
+  "Logo": "sunriseimports.jpg",
+  "Owner": "Ali Hassan",
+  "FormAndCut": "Whole",
+  "Moisture": "Low",
+  "Colour": "Multiple",
+  "ExportPercentage": 91
+}]

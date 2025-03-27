@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f8f"
+  },
+  "ProductId": "1",
+  "ProductName": "Apples",
+  "Origin": "USA",
+  "PackingDetails": "Box of 10kg",
+  "Forecast": "High Demand",
+  "Colour": "Red",
+  "CultivationType": "Organic",
+  "Moisture": "Low",
+  "FormAndCut": "Whole",
+  "Image": "apple.jpg",
+  "Price": 20
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f90"
+  },
+  "ProductId": "2",
+  "ProductName": "Oranges",
+  "Origin": "Spain",
+  "PackingDetails": "Box of 5kg",
+  "Forecast": "Medium Demand",
+  "Colour": "Orange",
+  "CultivationType": "Conventional",
+  "Moisture": "Medium",
+  "FormAndCut": "Whole",
+  "Image": "orange.jpg",
+  "Price": 15
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f91"
+  },
+  "ProductId": "3",
+  "ProductName": "Bananas",
+  "Origin": "Ecuador",
+  "PackingDetails": "Box of 7kg",
+  "Forecast": "High Demand",
+  "Colour": "Yellow",
+  "CultivationType": "Organic",
+  "Moisture": "Medium",
+  "FormAndCut": "Whole",
+  "Image": "banana.jpg",
+  "Price": 12
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f92"
+  },
+  "ProductId": "4",
+  "ProductName": "Grapes",
+  "Origin": "Italy",
+  "PackingDetails": "Box of 3kg",
+  "Forecast": "Low Demand",
+  "Colour": "Green",
+  "CultivationType": "Conventional",
+  "Moisture": "High",
+  "FormAndCut": "Whole",
+  "Image": "grapes.jpg",
+  "Price": 25
+},
+{
+  "_id": {
+    "$oid": "67e4f8cf77939e078a6e9f93"
+  },
+  "ProductId": "5",
+  "ProductName": "Mangoes",
+  "Origin": "India",
+  "PackingDetails": "Box of 6kg",
+  "Forecast": "High Demand",
+  "Colour": "Yellow",
+  "CultivationType": "Organic",
+  "Moisture": "Low",
+  "FormAndCut": "Whole",
+  "Image": "mango.jpg",
+  "Price": 30
+}]

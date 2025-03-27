@@ -5,7 +5,18 @@ class Profile(BaseModel):
     business_name: str
     business_overview: str
     business_type: str
-    established: int
+    established: str
     address: str
     logo: str
     owner: str
+    formAndCut: str
+    image: str
+    size: float
+    exportPercentage: float
+    exportCountries: str
+    founded: int
+    logoUrl: str
+    location: str
+    type: str
+    Moisture: str
+

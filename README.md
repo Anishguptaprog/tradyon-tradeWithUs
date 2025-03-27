@@ -146,3 +146,7 @@ This README file covers:
 ![Image](editprod.png)
 ## Login
 ![Image](login.png)
+## Product/[id]
+![Image](product_id.png)
+## Profile/[id]
+![Image](profile_id.png)
